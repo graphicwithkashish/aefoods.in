@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Our Premium Collection | Adhveer Enterprises</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&amp;family=Montserrat:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "outline": "#837566",
+                        "surface-container-low": "#fff2e2",
+                        "soft-clay": "#4D3D35",
+                        "primary-fixed-dim": "#fcba64",
+                        "tertiary": "#45655a",
+                        "tertiary-fixed-dim": "#accec1",
+                        "surface-container": "#FFEBD1",
+                        "on-surface": "#281900",
+                        "surface": "#fff8f3",
+                        "on-surface-variant": "#514537",
+                        "background": "#fff8f3",
+                        "tertiary-fixed": "#c8eadd",
+                        "on-secondary": "#ffffff",
+                        "warm-cream": "#F2D2A4",
+                        "on-primary-fixed-variant": "#653e00",
+                        "primary": "#855400",
+                        "on-secondary-fixed": "#2b160d",
+                        "outline-variant": "#d5c4b2",
+                        "surface-dim": "#f4d6a9",
+                        "on-error": "#ffffff",
+                        "on-secondary-fixed-variant": "#5c4035",
+                        "surface-main": "#FFF8F3",
+                        "surface-variant": "#fddeb1",
+                        "surface-tint": "#855400",
+                        "error-container": "#ffdad6",
+                        "inverse-primary": "#fcba64",
+                        "surface-bright": "#fff8f3",
+                        "secondary-fixed-dim": "#e6beae",
+                        "surface-container-high": "#ffe4be",
+                        "inverse-surface": "#3f2d0e",
+                        "on-tertiary-container": "#224037",
+                        "secondary-fixed": "#ffdbcd",
+                        "secondary": "#76574b",
+                        "on-tertiary-fixed-variant": "#2e4d43",
+                        "on-primary-container": "#543400",
+                        "error": "#BA1A1A",
+                        "on-primary-fixed": "#2a1700",
+                        "secondary-container": "#fdd4c4",
+                        "surface-container-highest": "#fddeb1",
+                        "on-primary": "#ffffff",
+                        "inverse-on-surface": "#ffeed9",
+                        "primary-fixed": "#ffddb7",
+                        "on-secondary-container": "#795a4d",
+                        "surface-container-lowest": "#ffffff",
+                        "on-error-container": "#93000a",
+                        "on-tertiary-fixed": "#002019",
+                        "primary-container": "#d69947",
+                        "tertiary-container": "#8baca0",
+                        "on-background": "#281900",
+                        "on-tertiary": "#ffffff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "base": "8px",
+                        "section-gap-mobile": "64px",
+                        "margin-mobile": "16px",
+                        "section-gap-desktop": "120px",
+                        "gutter": "24px",
+                        "container-max": "1280px",
+                        "margin-desktop": "40px"
+                    },
+                    "fontFamily": {
+                        "headline-md": ["Playfair Display"],
+                        "display-lg": ["Playfair Display"],
+                        "body-lg": ["Montserrat"],
+                        "label-lg": ["Montserrat"],
+                        "body-md": ["Montserrat"],
+                        "display-lg-mobile": ["Playfair Display"],
+                        "label-sm": ["Montserrat"],
+                        "headline-lg": ["Playfair Display"]
+                    },
+                    "fontSize": {
+                        "headline-md": ["24px", {"lineHeight": "1.4", "fontWeight": "600"}],
+                        "display-lg": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "label-lg": ["14px", {"lineHeight": "1.2", "letterSpacing": "0.1em", "fontWeight": "600"}],
+                        "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "display-lg-mobile": ["40px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                        "label-sm": ["12px", {"lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "500"}],
+                        "headline-lg": ["32px", {"lineHeight": "1.3", "fontWeight": "600"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        .premium-shadow {
+            shadow-color: #361F15;
+            box-shadow: 0 4px 20px -2px rgba(54, 31, 21, 0.1);
+        }
+        .premium-shadow:hover {
+            box-shadow: 0 20px 40px -10px rgba(54, 31, 21, 0.15);
+        }
+        .active-filter {
+            @apply border-b-2 border-primary text-primary font-bold;
+        }
+    </style>
+</head>
+<body class="bg-surface-main text-on-surface font-body-md overflow-x-hidden">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 flex justify-between items-center px-margin-desktop py-4 max-w-container-max mx-auto bg-warm-cream/95 backdrop-blur-md shadow-sm shadow-[#361F15]/10">
+<div class="font-headline-md text-headline-md font-bold text-soft-clay">Adhveer Enterprises</div>
+<div class="hidden md:flex items-center gap-10">
+<a class="font-label-lg text-label-lg tracking-[0.1em] text-on-surface-variant hover:text-primary transition-colors duration-300 hover:scale-105 transition-transform duration-200" href="index.html">Home</a>
+<a class="font-label-lg text-label-lg tracking-[0.1em] text-on-surface-variant hover:text-primary transition-colors duration-300 hover:scale-105 transition-transform duration-200" href="#">About</a>
+<a class="font-label-lg text-label-lg tracking-[0.1em] text-primary font-bold border-b-2 border-primary pb-1 hover:scale-105 transition-transform duration-200" href="#">Brands</a>
+<a class="font-label-lg text-label-lg tracking-[0.1em] text-on-surface-variant hover:text-primary transition-colors duration-300 hover:scale-105 transition-transform duration-200" href="#">Services</a>
+<a class="font-label-lg text-label-lg tracking-[0.1em] text-on-surface-variant hover:text-primary transition-colors duration-300 hover:scale-105 transition-transform duration-200" href="#">Contact</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="material-symbols-outlined text-soft-clay text-2xl hover:scale-110 transition-transform">shopping_cart</button>
+<button class="md:hidden material-symbols-outlined text-soft-clay text-2xl" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">menu</button>
+</div>
+</nav>
+<!-- Hero Section -->
+<header class="relative pt-32 pb-20 md:pt-48 md:pb-32 px-margin-desktop max-w-container-max mx-auto text-center overflow-hidden">
+<div class="relative z-10">
+<span class="font-label-lg text-label-lg text-primary tracking-[0.3em] uppercase mb-4 block">Crafted with Heritage</span>
+<h1 class="font-display-lg text-display-lg md:text-display-lg text-soft-clay mb-6">Our Premium Collection</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto leading-relaxed">
+                Experience the fine balance of artisanal tradition and modern precision. Each product is carefully curated to bring the essence of nature's purity directly to your table.
+            </p>
+</div>
+<!-- Decorative subtle accent -->
+<div class="absolute top-0 right-0 w-96 h-96 bg-surface-container opacity-30 rounded-full blur-3xl -mr-48 -mt-24"></div>
+<div class="absolute bottom-0 left-0 w-64 h-64 bg-warm-cream opacity-20 rounded-full blur-3xl -ml-32 -mb-16"></div>
+</header>
+<!-- Filter Bar -->
+<section class="sticky top-[72px] z-40 bg-surface-main/80 backdrop-blur-sm border-b border-outline-variant/30 mb-16">
+<div class="max-w-container-max mx-auto px-margin-desktop py-6 flex justify-center items-center gap-8 md:gap-16">
+<button class="filter-btn active-filter font-label-lg text-label-lg tracking-widest uppercase transition-all duration-300 hover:text-primary" onclick="filterProducts('all', this)">All Products</button>
+<button class="filter-btn font-label-lg text-label-lg tracking-widest uppercase text-on-surface-variant transition-all duration-300 hover:text-primary" onclick="filterProducts('honey', this)">Honey</button>
+<button class="filter-btn font-label-lg text-label-lg tracking-widest uppercase text-on-surface-variant transition-all duration-300 hover:text-primary" onclick="filterProducts('coffee', this)">Coffee</button>
+<button class="filter-btn font-label-lg text-label-lg tracking-widest uppercase text-on-surface-variant transition-all duration-300 hover:text-primary" onclick="filterProducts('tea', this)">Tea</button>
+</div>
+</section>
+<!-- Product Grid -->
+<main class="max-w-container-max mx-auto px-margin-desktop pb-section-gap-desktop">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter" id="product-grid">
+<!-- Hiveora Natural Honey -->
+<article class="product-card group bg-white p-6 rounded-xl premium-shadow transition-all duration-500 hover:-translate-y-2" data-category="honey">
+<div class="aspect-[4/5] overflow-hidden rounded-lg bg-surface-container-low mb-6 relative">
+<img alt="Hiveora Honey Jar" class="w-full h-full object-contain p-4 group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDNr9Z15OzWRU_qdrL_wiNFm-f1JU-Sxay4zXDcdU7-hi5PLFu0lIE0CMfOg2HG5hPUOr1NhZ3eHqJRvCtcdFkyIETGnJ4pQMkVEhfy_frQeDBWNe8_MK2TeM-1H7xcvLG4FTXJ6oLmxKLLG11zl5JwXbEqJg9ge99V4-9_hhBMmBKVJlSfEsh6467jEAfA1DKz1-b6lHc2fZQs2vygNJM-pc87UUtQS0g6HExuBpU7g1hPidxazCaFO6qVTtDm-fVaD9xZXr7kQ4o"/>
+<div class="absolute top-4 right-4 bg-primary/10 text-primary px-3 py-1 rounded-full font-label-sm text-label-sm uppercase tracking-tighter">Artisanal</div>
+</div>
+<div class="space-y-4">
+<div class="border-l-4 border-primary pl-4">
+<h3 class="font-headline-md text-headline-md text-soft-clay">Hiveora Natural Honey</h3>
+<p class="font-label-sm text-label-sm text-primary uppercase tracking-widest">Premium Collection</p>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-2">
+                        100% pure, ethically sourced honey harvested from protected hives to ensure sustainable biodiversity.
+                    </p>
+<button class="w-full py-4 bg-primary text-warm-cream font-label-lg text-label-lg uppercase tracking-widest rounded-lg hover:bg-soft-clay transition-colors duration-300 active:scale-95 flex items-center justify-center gap-2">
+<span>Enquire Now</span>
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+</article>
+<!-- South Indian Filter Coffee -->
+<article class="product-card group bg-white p-6 rounded-xl premium-shadow transition-all duration-500 hover:-translate-y-2" data-category="coffee">
+<div class="aspect-[4/5] overflow-hidden rounded-lg bg-surface-container-low mb-6 relative">
+<img alt="South Indian Filter Coffee" class="w-full h-full object-contain p-4 group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDh2elQ-FX9prkqHmw5VaU9uoBDra31-z5E-wntZw8_9etS4hwvSCSGy923T8L94GG1lLLaNuYXf5rC8JNxio9jgHLFWdI-hE2sz5zpnsZVOpOjasF9xC6L8DSNcWFKW9eLjUnnciu1r_DOJ6rvUPPLfr1AYeBgWThBVspL6qEMRmFg2Ko5ocjQ_NVsnheKqDNc8ehd73wNTgVnV6pQGATy5Z6kJygMcx9vyiF_18-8QaJOAmKz4f3M5Y4LH44xpznwF0pg5t2xzvE"/>
+<div class="absolute top-4 right-4 bg-primary/10 text-primary px-3 py-1 rounded-full font-label-sm text-label-sm uppercase tracking-tighter">Classic</div>
+</div>
+<div class="space-y-4">
+<div class="border-l-4 border-primary pl-4">
+<h3 class="font-headline-md text-headline-md text-soft-clay">South Indian Filter Coffee</h3>
+<p class="font-label-sm text-label-sm text-primary uppercase tracking-widest">ad-cafe Essentials</p>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-2">
+                        Authentic 80% Arabica and 20% Robusta blend, meticulously ground for the perfect traditional filter coffee experience.
+                    </p>
+<button class="w-full py-4 bg-primary text-warm-cream font-label-lg text-label-lg uppercase tracking-widest rounded-lg hover:bg-soft-clay transition-colors duration-300 active:scale-95 flex items-center justify-center gap-2">
+<span>View Details</span>
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+</article>
+<!-- Gold Plantation Coffee Beans -->
+<article class="product-card group bg-white p-6 rounded-xl premium-shadow transition-all duration-500 hover:-translate-y-2" data-category="coffee">
+<div class="aspect-[4/5] overflow-hidden rounded-lg bg-surface-container-low mb-6 relative">
+<img alt="Gold Plantation Beans" class="w-full h-full object-contain p-4 group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBRyttEEpchv0GI2YS6IBiQ_4I6ppZaFDhmFLYHpbqbP3YkobtnXS9u_OMwOgCYYUiF9_PGeQ37H362OXsArNM2-8Ou4c-G_UkD1CkmeFdBf9jzDYROwKybqSs7WLETe_A8C2I5j2wlsRQ3qp7-1fM1kunDScEDnD_7ZYPRmjcd84sGlkhq9x5-sZ2XyyoGuci7j3sxX6C0ukgaUXv8Nne5bDz573rG-v5sbMPyXHFUxX--h-LyeEG2KO96XHIPyL1XaeH9Ni4zxso"/>
+<div class="absolute top-4 right-4 bg-primary/10 text-primary px-3 py-1 rounded-full font-label-sm text-label-sm uppercase tracking-tighter">Boutique</div>
+</div>
+<div class="space-y-4">
+<div class="border-l-4 border-primary pl-4">
+<h3 class="font-headline-md text-headline-md text-soft-clay">Gold Plantation Coffee Beans</h3>
+<p class="font-label-sm text-label-sm text-primary uppercase tracking-widest">100% Arabica</p>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-2">
+                        Single-origin beans sourced from high-altitude plantations, offering a complex profile with notes of chocolate and caramel.
+                    </p>
+<button class="w-full py-4 bg-primary text-warm-cream font-label-lg text-label-lg uppercase tracking-widest rounded-lg hover:bg-soft-clay transition-colors duration-300 active:scale-95 flex items-center justify-center gap-2">
+<span>View Details</span>
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+</article>
+<!-- Cafe Blend Coffee -->
+<article class="product-card group bg-white p-6 rounded-xl premium-shadow transition-all duration-500 hover:-translate-y-2" data-category="coffee">
+<div class="aspect-[4/5] overflow-hidden rounded-lg bg-surface-container-low mb-6 relative">
+<img alt="Cafe Blend Packaging" class="w-full h-full object-contain p-4 group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAaoCG1VikZqaRjNtiId5QqgSm2CvCZ1305aLeKT8ClL3iG3ZlXX_xBPE4TODbNZ3Lpddbe2WIc62ymtynfcficF0h8dyLzBn4c4moUz6y8Uxc1CZLuY4-V0bfpBFHu7LxLL3bZlYaGxY_hjzv5hZWumZx_YtGNWjZXfWsLa8IxKliurrpXa0IalkBsREWrUi35Bkc3zpYjusApKtlbxB_Zdpm71UYA98I-A8cSVyIKoKJIDHeXTl_Cq6zT8-aZArMtm1dVAC3kRbY"/>
+</div>
+<div class="space-y-4">
+<div class="border-l-4 border-primary pl-4">
+<h3 class="font-headline-md text-headline-md text-soft-clay">ad-cafe Cafe Blend</h3>
+<p class="font-label-sm text-label-sm text-primary uppercase tracking-widest">Master Roaster's Choice</p>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-2">
+                        A sophisticated 90% Arabica and 10% Robusta blend designed for espresso-based drinks and home brewing enthusiasts.
+                    </p>
+<button class="w-full py-4 border-2 border-soft-clay text-soft-clay font-label-lg text-label-lg uppercase tracking-widest rounded-lg hover:bg-soft-clay hover:text-warm-cream transition-all duration-300 active:scale-95">Enquire</button>
+</div>
+</article>
+<!-- Novel-tea Premium Tea -->
+<article class="product-card group bg-white p-6 rounded-xl premium-shadow transition-all duration-500 hover:-translate-y-2" data-category="tea">
+<div class="aspect-[4/5] overflow-hidden rounded-lg bg-surface-container-low mb-6 relative">
+<img alt="Novel-tea Premium Tea Bag" class="w-full h-full object-contain p-4 group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDrZ8i2EEQkI_gW42ovkx9Q_LEVjbAWhvjF3ZAZA5_oaJPUnrRYNykq8sq2vCHn-Pz7Z3FiIn5tjgzpstlx6CT1SngTXhEz-XyVrQhSHl6EP7_7eUq1GZ496tgoS6i5tPSOr3FwFQn2hNUQfEc48OBM48y60vcxZgzkgXNtafNp9AoEINooTMa2yCgB1smdIZp2CqmPT31K775hiAI3enDiZHjvFTLLGXKfm9gubQFNtyylbQj9vCbJ-FJ0znow0FkMFGIyoCHY5L8"/>
+<div class="absolute top-4 right-4 bg-tertiary/10 text-tertiary px-3 py-1 rounded-full font-label-sm text-label-sm uppercase tracking-tighter">Organic</div>
+</div>
+<div class="space-y-4">
+<div class="border-l-4 border-tertiary pl-4">
+<h3 class="font-headline-md text-headline-md text-soft-clay">Novel-tea Premium Tea</h3>
+<p class="font-label-sm text-label-sm text-tertiary uppercase tracking-widest">Pure Nature</p>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-2">
+                        Hand-picked tea leaves from sustainable estates, delivering a perfect taste and rich antioxidants in every sip.
+                    </p>
+<button class="w-full py-4 bg-primary text-warm-cream font-label-lg text-label-lg uppercase tracking-widest rounded-lg hover:bg-soft-clay transition-colors duration-300 active:scale-95 flex items-center justify-center gap-2">
+<span>View Details</span>
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+</article>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-low border-t-4 border-primary">
+<div class="w-full px-margin-desktop py-section-gap-desktop flex flex-col md:flex-row justify-between items-start gap-12 max-w-container-max mx-auto">
+<div class="space-y-6 max-w-sm">
+<div class="font-headline-lg text-headline-lg text-primary">Adhveer Enterprises</div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                    Sourcing the finest natural ingredients to deliver excellence in every product. Committed to quality, tradition, and sustainability since inception.
+                </p>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-soft-clay hover:text-primary cursor-pointer transition-colors">public</span>
+<span class="material-symbols-outlined text-soft-clay hover:text-primary cursor-pointer transition-colors">mail</span>
+<span class="material-symbols-outlined text-soft-clay hover:text-primary cursor-pointer transition-colors">location_on</span>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-x-12 gap-y-8">
+<div class="space-y-4">
+<h4 class="font-label-lg text-label-lg uppercase tracking-widest text-soft-clay">Quick Links</h4>
+<ul class="space-y-2">
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Privacy Policy</a></li>
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Terms of Service</a></li>
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Shipping Info</a></li>
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Wholesale</a></li>
+</ul>
+</div>
+<div class="space-y-4">
+<h4 class="font-label-lg text-label-lg uppercase tracking-widest text-soft-clay">Categories</h4>
+<ul class="space-y-2">
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Honey</a></li>
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Coffee</a></li>
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Tea</a></li>
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Gifts</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="w-full px-margin-desktop py-8 border-t border-outline-variant/20 flex flex-col md:flex-row justify-between items-center gap-4 max-w-container-max mx-auto">
+<p class="font-body-md text-body-md text-on-surface-variant">© 2024 Adhveer Enterprises. Crafted with artisanal excellence.</p>
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-label-sm uppercase text-soft-clay">Premium Partner</span>
+<div class="w-8 h-[2px] bg-primary"></div>
+</div>
+</div>
+</footer>
+<!-- Mobile Menu -->
+<div class="fixed inset-0 z-[60] bg-surface-main hidden overflow-y-auto" id="mobile-menu">
+<div class="p-margin-mobile flex flex-col min-h-full">
+<div class="flex justify-between items-center mb-12">
+<div class="font-headline-md text-headline-md font-bold text-soft-clay">Adhveer</div>
+<button class="material-symbols-outlined text-3xl" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">close</button>
+</div>
+<div class="flex flex-col gap-8 items-center text-center">
+<a class="font-display-lg text-4xl text-soft-clay" href="#" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Home</a>
+<a class="font-display-lg text-4xl text-soft-clay" href="#" onclick="document.getElementById('mobile-menu').classList.add('hidden')">About</a>
+<a class="font-display-lg text-4xl text-primary font-bold" href="#" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Brands</a>
+<a class="font-display-lg text-4xl text-soft-clay" href="#" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Services</a>
+<a class="font-display-lg text-4xl text-soft-clay" href="#" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Contact</a>
+</div>
+<div class="mt-auto pt-12 pb-8 text-center border-t border-outline-variant/30">
+<p class="font-label-sm text-label-sm text-on-surface-variant">info@adhveer.in</p>
+</div>
+</div>
+</div>
+<script>
+        function filterProducts(category, btnElement) {
+            const products = document.querySelectorAll('.product-card');
+            const buttons = document.querySelectorAll('.filter-btn');
+
+            // Update button styles
+            buttons.forEach(btn => {
+                btn.classList.remove('active-filter', 'text-primary', 'font-bold', 'border-b-2', 'border-primary');
+                btn.classList.add('text-on-surface-variant');
+            });
+            btnElement.classList.add('active-filter', 'text-primary', 'font-bold', 'border-b-2', 'border-primary');
+            btnElement.classList.remove('text-on-surface-variant');
+
+            // Filter logic with animation
+            products.forEach(product => {
+                product.style.opacity = '0';
+                product.style.transform = 'scale(0.95)';
+                
+                setTimeout(() => {
+                    if (category === 'all' || product.dataset.category === category) {
+                        product.style.display = 'block';
+                        setTimeout(() => {
+                            product.style.opacity = '1';
+                            product.style.transform = 'scale(1)';
+                        }, 50);
+                    } else {
+                        product.style.display = 'none';
+                    }
+                }, 300);
+            });
+        }
+
+        // Simple scroll reveal
+        window.addEventListener('scroll', () => {
+            const cards = document.querySelectorAll('.product-card');
+            cards.forEach(card => {
+                const cardTop = card.getBoundingClientRect().top;
+                if (cardTop < window.innerHeight * 0.9) {
+                    card.style.opacity = '1';
+                }
+            });
+        });
+    </script>
+</body></html>
