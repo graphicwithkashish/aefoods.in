@@ -123,20 +123,54 @@
 </head>
 <body class="bg-surface-main text-on-surface font-body-md overflow-x-hidden">
 <!-- TopNavBar -->
-<nav class="fixed top-0 w-full z-50 flex justify-between items-center px-margin-desktop py-4 max-w-container-max mx-auto bg-warm-cream/95 backdrop-blur-md shadow-sm shadow-[#361F15]/10">
+ <nav class="fixed top-0 w-full z-50 bg-warm-cream/95 backdrop-blur-md border-b border-rich-coffee/10 shadow-sm transition-all duration-300">
+<div class="container-fluid px-4 md:px-8 py-3 md:py-4">
+<div class="max-w-container-max mx-auto flex justify-between items-center">
+<div class="flex items-center gap-2 md:gap-4">
+<img alt="Adhveer Logo" class="h-8 md:h-10 w-auto" src="ahdveer Enterprices logo.png"/>
+<span class="font-headline-md text-lg md:text-headline-md text-rich-coffee tracking-tighter"></span>
+</div>
+<!-- Desktop Links -->
+<div class="hidden lg:flex gap-8 items-center">
+<a class=" font-label-lg text-label-lg uppercase tracking-widest" href="index.html">Home</a>
+<a class="text-harvest-gold font-bold border-b-2 border-gold pb-1 text-rich-coffee hover:text-harvest-gold transition-colors font-label-lg text-label-lg uppercase tracking-widest" href="our product.html">Our product</a>
+<!-- <a class="text-rich-coffee hover:text-harvest-gold transition-colors font-label-lg text-label-lg uppercase tracking-widest" href="#services">Services</a> -->
+<a class="text-rich-coffee hover:text-harvest-gold transition-colors font-label-lg text-label-lg uppercase tracking-widest" href="index.html">Contact</a>
+</div>
+<div class="flex items-center gap-4">
+<!-- <button class="hidden sm:block bg-harvest-gold text-white px-4 md:px-6 py-2 rounded-lg font-label-lg text-label-lg uppercase tracking-widest hover:bg-rich-coffee transition-all duration-300 active:scale-95">
+                    Get in Touch
+                </button> -->
+<!-- Hamburger -->
+<button aria-label="Toggle Menu" class="lg:hidden text-rich-coffee p-2" id="menu-toggle">
+<span class="material-symbols-outlined text-3xl">menu</span>
+</button>
+</div>
+</div>
+<!-- Mobile Menu Dropdown -->
+<div class="lg:hidden" id="mobile-menu">
+<div class="flex flex-col gap-4 pt-4 border-t border-rich-coffee/5 mt-3">
+<a class="text-harvest-gold font-bold font-label-lg uppercase tracking-widest" href="index.html">Home</a>
+<a class="text-rich-coffee font-label-lg uppercase tracking-widest" href="our product.html">Our Products</a>
+<!-- <a class="text-rich-coffee font-label-lg uppercase tracking-widest" href="#services">Services</a> -->
+<a class="text-rich-coffee font-label-lg uppercase tracking-widest" href="index.html">Contact</a>
+<!-- <button class="sm:hidden bg-harvest-gold text-white px-6 py-3 rounded-lg font-label-lg uppercase tracking-widest w-full">
+                    Get in Touch
+                </button> -->
+</div>
+</div>
+</div>
+</nav>
+<!-- <nav class="fixed top-0 w-full z-50 flex justify-between items-center px-margin-desktop py-4 max-w-container-max mx-auto bg-warm-cream/95 backdrop-blur-md shadow-sm shadow-[#361F15]/10">
 <div class="font-headline-md text-headline-md font-bold text-soft-clay">Adhveer Enterprises</div>
 <div class="hidden md:flex items-center gap-10">
 <a class="font-label-lg text-label-lg tracking-[0.1em] text-on-surface-variant hover:text-primary transition-colors duration-300 hover:scale-105 transition-transform duration-200" href="index.html">Home</a>
-<a class="font-label-lg text-label-lg tracking-[0.1em] text-on-surface-variant hover:text-primary transition-colors duration-300 hover:scale-105 transition-transform duration-200" href="#">About</a>
 <a class="font-label-lg text-label-lg tracking-[0.1em] text-primary font-bold border-b-2 border-primary pb-1 hover:scale-105 transition-transform duration-200" href="#">Brands</a>
-<a class="font-label-lg text-label-lg tracking-[0.1em] text-on-surface-variant hover:text-primary transition-colors duration-300 hover:scale-105 transition-transform duration-200" href="#">Services</a>
+<a class="font-label-lg text-label-lg tracking-[0.1em] text-on-surface-variant hover:text-primary transition-colors duration-300 hover:scale-105 transition-transform duration-200" href="index.html-#Services">Services</a>
 <a class="font-label-lg text-label-lg tracking-[0.1em] text-on-surface-variant hover:text-primary transition-colors duration-300 hover:scale-105 transition-transform duration-200" href="#">Contact</a>
 </div>
-<div class="flex items-center gap-4">
-<button class="material-symbols-outlined text-soft-clay text-2xl hover:scale-110 transition-transform">shopping_cart</button>
-<button class="md:hidden material-symbols-outlined text-soft-clay text-2xl" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">menu</button>
-</div>
-</nav>
+
+</nav> -->
 <!-- Hero Section -->
 <header class="relative pt-32 pb-20 md:pt-48 md:pb-32 px-margin-desktop max-w-container-max mx-auto text-center overflow-hidden">
 <div class="relative z-10">
