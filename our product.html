@@ -3,102 +3,105 @@
 <html class="scroll-smooth" lang="en"><head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Our Premium Collection | Adhveer Enterprises</title>
+<title>Adhveer Enterprises</title>
+<!-- Tailwind CSS with plugins -->
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Bootstrap 5 CSS for Grid system -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap-grid.min.css" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&amp;family=Montserrat:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 <script id="tailwind-config">
         tailwind.config = {
             darkMode: "class",
             theme: {
                 extend: {
                     "colors": {
-                        "outline": "#837566",
-                        "surface-container-low": "#fff2e2",
-                        "soft-clay": "#4D3D35",
-                        "primary-fixed-dim": "#fcba64",
-                        "tertiary": "#45655a",
-                        "tertiary-fixed-dim": "#accec1",
-                        "surface-container": "#FFEBD1",
+                        "secondary-container": "#fdd4c4",
+                        "tertiary-fixed-dim": "#fcba64",
+                        "outline": "#717975",
+                        "on-tertiary": "#ffffff",
+                        "harvest-gold": "#D69947",
+                        "error": "#ba1a1a",
+                        "tertiary": "#110700",
+                        "on-primary": "#ffffff",
+                        "primary-fixed-dim": "#accec1",
+                        "surface-container": "#ffebd1",
+                        "outline-variant": "#c1c8c4",
                         "on-surface": "#281900",
-                        "surface": "#fff8f3",
-                        "on-surface-variant": "#514537",
-                        "background": "#fff8f3",
-                        "tertiary-fixed": "#c8eadd",
+                        "secondary-fixed": "#ffdbcd",
+                        "on-error": "#ffffff",
+                        "surface-bright": "#fff8f3",
+                        "on-primary-fixed-variant": "#2e4d43",
+                        "secondary": "#76574b",
+                        "primary-container": "#05261e",
+                        "rich-coffee": "#361F15",
                         "on-secondary": "#ffffff",
                         "warm-cream": "#F2D2A4",
-                        "on-primary-fixed-variant": "#653e00",
-                        "primary": "#855400",
-                        "on-secondary-fixed": "#2b160d",
-                        "outline-variant": "#d5c4b2",
-                        "surface-dim": "#f4d6a9",
-                        "on-error": "#ffffff",
-                        "on-secondary-fixed-variant": "#5c4035",
-                        "surface-main": "#FFF8F3",
-                        "surface-variant": "#fddeb1",
-                        "surface-tint": "#855400",
-                        "error-container": "#ffdad6",
-                        "inverse-primary": "#fcba64",
-                        "surface-bright": "#fff8f3",
-                        "secondary-fixed-dim": "#e6beae",
-                        "surface-container-high": "#ffe4be",
-                        "inverse-surface": "#3f2d0e",
-                        "on-tertiary-container": "#224037",
-                        "secondary-fixed": "#ffdbcd",
-                        "secondary": "#76574b",
-                        "on-tertiary-fixed-variant": "#2e4d43",
-                        "on-primary-container": "#543400",
-                        "error": "#BA1A1A",
-                        "on-primary-fixed": "#2a1700",
-                        "secondary-container": "#fdd4c4",
-                        "surface-container-highest": "#fddeb1",
-                        "on-primary": "#ffffff",
-                        "inverse-on-surface": "#ffeed9",
-                        "primary-fixed": "#ffddb7",
-                        "on-secondary-container": "#795a4d",
+                        "on-primary-container": "#6f8f84",
                         "surface-container-lowest": "#ffffff",
+                        "surface-container-high": "#ffe4c0",
+                        "primary-fixed": "#c8eadd",
+                        "error-container": "#ffdad6",
+                        "on-secondary-fixed": "#2b160d",
+                        "soft-clay": "#4D3D35",
+                        "on-secondary-fixed-variant": "#5c4035",
+                        "on-tertiary-fixed": "#2a1700",
+                        "background": "#fff8f3",
+                        "on-secondary-container": "#795a4d",
                         "on-error-container": "#93000a",
-                        "on-tertiary-fixed": "#002019",
-                        "primary-container": "#d69947",
-                        "tertiary-container": "#8baca0",
+                        "surface-variant": "#fedeaf",
+                        "deep-forest": "#05261E",
+                        "inverse-primary": "#accec1",
+                        "on-tertiary-container": "#b57d2d",
+                        "surface-container-low": "#fff2e3",
+                        "on-primary-fixed": "#002019",
+                        "primary": "#000d08",
+                        "tertiary-container": "#311c00",
+                        "on-surface-variant": "#414845",
+                        "surface-tint": "#45655a",
+                        "secondary-fixed-dim": "#e6beae",
+                        "surface-container-highest": "#fedeaf",
+                        "inverse-on-surface": "#ffeeda",
+                        "inverse-surface": "#402d0c",
+                        "on-tertiary-fixed-variant": "#653e00",
+                        "tertiary-fixed": "#ffddb7",
+                        "surface": "#fff8f3",
                         "on-background": "#281900",
-                        "on-tertiary": "#ffffff"
+                        "surface-dim": "#f5d5a7"
                     },
                     "borderRadius": {
-                        "DEFAULT": "0.25rem",
-                        "lg": "0.5rem",
-                        "xl": "0.75rem",
-                        "full": "9999px"
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
                     },
                     "spacing": {
-                        "base": "8px",
                         "section-gap-mobile": "64px",
-                        "margin-mobile": "16px",
-                        "section-gap-desktop": "120px",
-                        "gutter": "24px",
                         "container-max": "1280px",
-                        "margin-desktop": "40px"
+                        "gutter": "24px",
+                        "base": "8px",
+                        "section-gap-desktop": "120px"
                     },
                     "fontFamily": {
-                        "headline-md": ["Playfair Display"],
-                        "display-lg": ["Playfair Display"],
-                        "body-lg": ["Montserrat"],
                         "label-lg": ["Montserrat"],
-                        "body-md": ["Montserrat"],
+                        "headline-lg": ["Playfair Display"],
+                        "headline-md": ["Playfair Display"],
                         "display-lg-mobile": ["Playfair Display"],
+                        "body-lg": ["Montserrat"],
+                        "body-md": ["Montserrat"],
                         "label-sm": ["Montserrat"],
-                        "headline-lg": ["Playfair Display"]
+                        "display-lg": ["Playfair Display"]
                     },
                     "fontSize": {
-                        "headline-md": ["24px", {"lineHeight": "1.4", "fontWeight": "600"}],
-                        "display-lg": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.01em", "fontWeight": "700"}],
-                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
-                        "label-lg": ["14px", {"lineHeight": "1.2", "letterSpacing": "0.1em", "fontWeight": "600"}],
-                        "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
-                        "display-lg-mobile": ["40px", {"lineHeight": "1.2", "fontWeight": "700"}],
-                        "label-sm": ["12px", {"lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "500"}],
-                        "headline-lg": ["32px", {"lineHeight": "1.3", "fontWeight": "600"}]
+                        "label-lg": ["0.875rem", {"lineHeight": "1.2", "letterSpacing": "0.1em", "fontWeight": "600"}],
+                        "headline-lg": ["2rem", {"lineHeight": "1.3", "fontWeight": "600"}],
+                        "headline-md": ["1.5rem", {"lineHeight": "1.4", "fontWeight": "600"}],
+                        "display-lg-mobile": ["2.5rem", {"lineHeight": "1.2", "fontWeight": "700"}],
+                        "body-lg": ["1.125rem", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "body-md": ["1rem", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "label-sm": ["0.75rem", {"lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "500"}],
+                        "display-lg": ["4rem", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}]
                     }
                 },
             },
@@ -107,35 +110,55 @@
 <style>
         .material-symbols-outlined {
             font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
-            vertical-align: middle;
         }
-        .premium-shadow {
-            shadow-color: #361F15;
-            box-shadow: 0 4px 20px -2px rgba(54, 31, 21, 0.1);
+        .hero-gradient {
+            background: linear-gradient(135deg, rgba(5, 38, 30, 0.95) 0%, rgba(54, 31, 21, 0.9) 100%);
         }
-        .premium-shadow:hover {
-            box-shadow: 0 20px 40px -10px rgba(54, 31, 21, 0.15);
+        .text-shadow-premium {
+            text-shadow: 0 4px 12px rgba(0,0,0,0.15);
         }
-        .active-filter {
-            @apply border-b-2 border-primary text-primary font-bold;
+        .card-hover:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(54, 31, 21, 0.08);
+        }
+        .brand-accent-border {
+            border-left: 4px solid #D69947;
+        }
+        #mobile-menu {
+            transition: all 0.3s ease-in-out;
+            max-height: 0;
+            overflow: hidden;
+        }
+        #mobile-menu.active {
+            max-height: 400px;
+            padding-bottom: 1.5rem;
+        }
+        @media (max-width: 768px) {
+            .display-lg { font-size: 2.5rem !important; }
+            .section-py { padding-top: 64px; padding-bottom: 64px; }
+        }
+        @media (min-width: 769px) {
+            .section-py { padding-top: 120px; padding-bottom: 120px; }
         }
     </style>
 </head>
-<body class="bg-surface-main text-on-surface font-body-md overflow-x-hidden">
+<body class="bg-surface font-body-md text-on-background selection:bg-harvest-gold selection:text-white">
+
+
 <!-- TopNavBar -->
- <nav class="fixed top-0 w-full z-50 bg-warm-cream/95 backdrop-blur-md border-b border-rich-coffee/10 shadow-sm transition-all duration-300">
+<nav class="fixed top-0 w-full z-50 bg-warm-cream/95 backdrop-blur-md border-b border-rich-coffee/10 shadow-sm transition-all duration-300">
 <div class="container-fluid px-4 md:px-8 py-3 md:py-4">
 <div class="max-w-container-max mx-auto flex justify-between items-center">
 <div class="flex items-center gap-2 md:gap-4">
-<img alt="Adhveer Logo" class="h-8 md:h-10 w-auto" src="ahdveer Enterprices logo.png"/>
+<img alt="Adhveer Logo" class="h-16 md:h-10 w-auto" src="ahdveer Enterprices logo.png"/>
 <span class="font-headline-md text-lg md:text-headline-md text-rich-coffee tracking-tighter"></span>
 </div>
 <!-- Desktop Links -->
 <div class="hidden lg:flex gap-8 items-center">
-<a class=" font-label-lg text-label-lg uppercase tracking-widest" href="index.html">Home</a>
-<a class="text-harvest-gold font-bold border-b-2 border-gold pb-1 text-rich-coffee hover:text-harvest-gold transition-colors font-label-lg text-label-lg uppercase tracking-widest" href="our product.html">Our product</a>
-<!-- <a class="text-rich-coffee hover:text-harvest-gold transition-colors font-label-lg text-label-lg uppercase tracking-widest" href="#services">Services</a> -->
-<a class="text-rich-coffee hover:text-harvest-gold transition-colors font-label-lg text-label-lg uppercase tracking-widest" href="index.html">Contact</a>
+<a class="text-rich-coffee hover:text-harvest-gold transition-colors  font-label-lg text-label-lg uppercase tracking-widest" href="index.html">Home</a>
+<a class="text-rich-coffee hover:text-harvest-gold transition-colors font-label-lg text-label-lg uppercase tracking-widest" href="our product.html">Our product</a>
+<!-- <a class="text-rich-coffee hover:text-harvest-gold transition-colors font-label-lg text-label-lg uppercase tracking-widest" href="index.html">Services</a> -->
+<a class="text-rich-coffee hover:text-harvest-gold transition-colors font-label-lg text-label-lg uppercase tracking-widest" href="contact.html">Contact</a>
 </div>
 <div class="flex items-center gap-4">
 <!-- <button class="hidden sm:block bg-harvest-gold text-white px-4 md:px-6 py-2 rounded-lg font-label-lg text-label-lg uppercase tracking-widest hover:bg-rich-coffee transition-all duration-300 active:scale-95">
@@ -150,10 +173,10 @@
 <!-- Mobile Menu Dropdown -->
 <div class="lg:hidden" id="mobile-menu">
 <div class="flex flex-col gap-4 pt-4 border-t border-rich-coffee/5 mt-3">
-<a class="text-harvest-gold font-bold font-label-lg uppercase tracking-widest" href="index.html">Home</a>
-<a class="text-rich-coffee font-label-lg uppercase tracking-widest" href="our product.html">Our Products</a>
-<!-- <a class="text-rich-coffee font-label-lg uppercase tracking-widest" href="#services">Services</a> -->
-<a class="text-rich-coffee font-label-lg uppercase tracking-widest" href="index.html">Contact</a>
+<a class="text-rich-coffee  hover:text-harvest-gold transition-colors font-label-lg uppercase tracking-widest" href="index.html">Home</a>
+<a class="text-rich-coffee hover:text-harvest-gold transition-colors font-label-lg uppercase tracking-widest" href="our product.html">Our Product</a>
+<!-- <a class="text-rich-coffee font-label-lg uppercase tracking-widest" href="index.html">Services</a> -->
+<a class="text-rich-coffee hover:text-harvest-gold transition-colors  font-label-lg uppercase tracking-widest" href="contact.html">Contact</a>
 <!-- <button class="sm:hidden bg-harvest-gold text-white px-6 py-3 rounded-lg font-label-lg uppercase tracking-widest w-full">
                     Get in Touch
                 </button> -->
@@ -161,16 +184,11 @@
 </div>
 </div>
 </nav>
-<!-- <nav class="fixed top-0 w-full z-50 flex justify-between items-center px-margin-desktop py-4 max-w-container-max mx-auto bg-warm-cream/95 backdrop-blur-md shadow-sm shadow-[#361F15]/10">
-<div class="font-headline-md text-headline-md font-bold text-soft-clay">Adhveer Enterprises</div>
-<div class="hidden md:flex items-center gap-10">
-<a class="font-label-lg text-label-lg tracking-[0.1em] text-on-surface-variant hover:text-primary transition-colors duration-300 hover:scale-105 transition-transform duration-200" href="index.html">Home</a>
-<a class="font-label-lg text-label-lg tracking-[0.1em] text-primary font-bold border-b-2 border-primary pb-1 hover:scale-105 transition-transform duration-200" href="#">Brands</a>
-<a class="font-label-lg text-label-lg tracking-[0.1em] text-on-surface-variant hover:text-primary transition-colors duration-300 hover:scale-105 transition-transform duration-200" href="index.html-#Services">Services</a>
-<a class="font-label-lg text-label-lg tracking-[0.1em] text-on-surface-variant hover:text-primary transition-colors duration-300 hover:scale-105 transition-transform duration-200" href="#">Contact</a>
-</div>
+<!--  -->
 
-</nav> -->
+
+
+
 <!-- Hero Section -->
 <header class="relative pt-32 pb-20 md:pt-48 md:pb-32 px-margin-desktop max-w-container-max mx-auto text-center overflow-hidden">
 <div class="relative z-10">
@@ -193,6 +211,12 @@
 <button class="filter-btn font-label-lg text-label-lg tracking-widest uppercase text-on-surface-variant transition-all duration-300 hover:text-primary" onclick="filterProducts('tea', this)">Tea</button>
 </div>
 </section>
+
+
+
+
+
+
 <!-- Product Grid -->
 <main class="max-w-container-max mx-auto px-margin-desktop pb-section-gap-desktop">
 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter" id="product-grid">
@@ -211,11 +235,14 @@
                         100% pure, ethically sourced honey harvested from protected hives to ensure sustainable biodiversity.
                     </p>
 <button class="w-full py-4 bg-primary text-warm-cream font-label-lg text-label-lg uppercase tracking-widest rounded-lg hover:bg-soft-clay transition-colors duration-300 active:scale-95 flex items-center justify-center gap-2">
-<span>Enquire Now</span>
-<span class="material-symbols-outlined text-sm">arrow_forward</span>
+<span>Buy Now</span>
+
 </button>
 </div>
 </article>
+
+
+
 <!-- South Indian Filter Coffee -->
 <article class="product-card group bg-white p-6 rounded-xl premium-shadow transition-all duration-500 hover:-translate-y-2" data-category="coffee">
 <div class="aspect-[4/5] overflow-hidden rounded-lg bg-surface-container-low mb-6 relative">
@@ -231,8 +258,8 @@
                         Authentic 80% Arabica and 20% Robusta blend, meticulously ground for the perfect traditional filter coffee experience.
                     </p>
 <button class="w-full py-4 bg-primary text-warm-cream font-label-lg text-label-lg uppercase tracking-widest rounded-lg hover:bg-soft-clay transition-colors duration-300 active:scale-95 flex items-center justify-center gap-2">
-<span>View Details</span>
-<span class="material-symbols-outlined text-sm">arrow_forward</span>
+<span>Buy Now</span>
+
 </button>
 </div>
 </article>
@@ -251,11 +278,16 @@
                         Single-origin beans sourced from high-altitude plantations, offering a complex profile with notes of chocolate and caramel.
                     </p>
 <button class="w-full py-4 bg-primary text-warm-cream font-label-lg text-label-lg uppercase tracking-widest rounded-lg hover:bg-soft-clay transition-colors duration-300 active:scale-95 flex items-center justify-center gap-2">
-<span>View Details</span>
-<span class="material-symbols-outlined text-sm">arrow_forward</span>
+<span>Buy Now</span>
+
 </button>
 </div>
 </article>
+
+
+
+
+
 <!-- Cafe Blend Coffee -->
 <article class="product-card group bg-white p-6 rounded-xl premium-shadow transition-all duration-500 hover:-translate-y-2" data-category="coffee">
 <div class="aspect-[4/5] overflow-hidden rounded-lg bg-surface-container-low mb-6 relative">
@@ -269,9 +301,17 @@
 <p class="font-body-md text-body-md text-on-surface-variant line-clamp-2">
                         A sophisticated 90% Arabica and 10% Robusta blend designed for espresso-based drinks and home brewing enthusiasts.
                     </p>
-<button class="w-full py-4 border-2 border-soft-clay text-soft-clay font-label-lg text-label-lg uppercase tracking-widest rounded-lg hover:bg-soft-clay hover:text-warm-cream transition-all duration-300 active:scale-95">Enquire</button>
+<button class="w-full py-4 bg-primary text-warm-cream font-label-lg text-label-lg uppercase tracking-widest rounded-lg hover:bg-soft-clay transition-colors duration-300 active:scale-95 flex items-center justify-center gap-2">
+<span>Buy Now</span>
+
+</button>
 </div>
 </article>
+
+
+
+
+
 <!-- Novel-tea Premium Tea -->
 <article class="product-card group bg-white p-6 rounded-xl premium-shadow transition-all duration-500 hover:-translate-y-2" data-category="tea">
 <div class="aspect-[4/5] overflow-hidden rounded-lg bg-surface-container-low mb-6 relative">
@@ -287,77 +327,128 @@
                         Hand-picked tea leaves from sustainable estates, delivering a perfect taste and rich antioxidants in every sip.
                     </p>
 <button class="w-full py-4 bg-primary text-warm-cream font-label-lg text-label-lg uppercase tracking-widest rounded-lg hover:bg-soft-clay transition-colors duration-300 active:scale-95 flex items-center justify-center gap-2">
-<span>View Details</span>
-<span class="material-symbols-outlined text-sm">arrow_forward</span>
+<span>Buy Now</span>
+
 </button>
 </div>
 </article>
 </div>
 </main>
+
+
+
+
+
+
+
 <!-- Footer -->
-<footer class="bg-surface-container-low border-t-4 border-primary">
-<div class="w-full px-margin-desktop py-section-gap-desktop flex flex-col md:flex-row justify-between items-start gap-12 max-w-container-max mx-auto">
-<div class="space-y-6 max-w-sm">
-<div class="font-headline-lg text-headline-lg text-primary">Adhveer Enterprises</div>
-<p class="font-body-md text-body-md text-on-surface-variant">
-                    Sourcing the finest natural ingredients to deliver excellence in every product. Committed to quality, tradition, and sustainability since inception.
-                </p>
+<footer class="bg-deep-forest py-12 md:py-16">
+<div class="container mx-auto px-4 md:px-8">
+<div class="row g-4 md:g-gutter">
+<div class="col-12 col-md-6 col-lg-3">
+<div class="flex items-center gap-4 mb-6">
+<img alt="Logo" class="h-16 md:h-10" src="ahdveer Enterprices logo G.png"/>
+<span class="font-headline-lg text-xl md:text-headline-lg text-harvest-gold"></span>
+</div>
+<p class="font-body-md text-warm-cream/60 mb-6 uppercase tracking-widest text-[10px] md:text-xs">Trust | Quality | Growth</p>
 <div class="flex gap-4">
-<span class="material-symbols-outlined text-soft-clay hover:text-primary cursor-pointer transition-colors">public</span>
-<span class="material-symbols-outlined text-soft-clay hover:text-primary cursor-pointer transition-colors">mail</span>
-<span class="material-symbols-outlined text-soft-clay hover:text-primary cursor-pointer transition-colors">location_on</span>
+<a class="text-warm-cream/80 hover:text-harvest-gold transition-colors" href="https://www.instagram.com/adhveer.enterprises" target="_blank">
+    <i class="fa-brands fa-instagram"></i>
+</a>
+<a class="text-warm-cream/80 hover:text-harvest-gold transition-colors" href="tel:+919115970208">
+    <span class="material-symbols-outlined">call</span>
+</a>
+<a href="https://wa.me/919115970200" target="_blank" class="text-warm-cream/80 hover:text-green-500 transition-colors">
+    <span class="material-symbols-outlined">chat</span>
+</a>
 </div>
 </div>
-<div class="grid grid-cols-2 gap-x-12 gap-y-8">
-<div class="space-y-4">
-<h4 class="font-label-lg text-label-lg uppercase tracking-widest text-soft-clay">Quick Links</h4>
-<ul class="space-y-2">
-<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Privacy Policy</a></li>
-<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Terms of Service</a></li>
-<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Shipping Info</a></li>
-<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Wholesale</a></li>
+<div class="col-6 col-lg-3">
+<h4 class="font-label-lg text-harvest-gold mb-4 md:mb-6 uppercase tracking-widest text-xs md:text-sm">Our Brands</h4>
+<ul class="space-y-3 md:space-y-4">
+<li class="text-warm-cream/80 hover:text-white transition-all text-sm md:text-base">Hiveora™</a></li>
+<li class="text-warm-cream/80 hover:text-white transition-all text-sm md:text-base">Adcafe™</a></li>
+<li class="text-warm-cream/80 hover:text-white transition-all text-sm md:text-base">NovelTes™</a></li>
+
 </ul>
 </div>
-<div class="space-y-4">
-<h4 class="font-label-lg text-label-lg uppercase tracking-widest text-soft-clay">Categories</h4>
-<ul class="space-y-2">
-<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Honey</a></li>
-<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Coffee</a></li>
-<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Tea</a></li>
-<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Gifts</a></li>
+<div class="col-6 col-lg-2">
+<h4 class="font-label-lg text-harvest-gold mb-4 md:mb-6 uppercase tracking-widest text-xs md:text-sm">Support</h4>
+<ul class="space-y-3 md:space-y-4">
+    <li class="text-warm-cream/80 hover:text-white transition-all text-sm md:text-base">Partnership</a></li>
+    <li class="text-warm-cream/80 hover:text-white transition-all text-sm md:text-base">Privacy Policy</a></li>
+
 </ul>
 </div>
+<div class="col-12 col-lg-4">
+<h4 class="font-label-lg text-harvest-gold mb-4 md:mb-6 uppercase tracking-widest text-xs md:text-sm">Connect</h4>
+<p class="text-warm-cream/60 mb-4 text-sm">Subscribe for updates on our latest products and services.</p>
+<div class="flex">
+<input class="bg-white/10 border-none text-white p-3 rounded-l-lg focus:ring-1 focus:ring-harvest-gold w-full text-sm" placeholder="Email" type="email"/>
+<button class="bg-harvest-gold p-3 rounded-r-lg"><span class="material-symbols-outlined text-rich-coffee">send</span></button>
 </div>
 </div>
-<div class="w-full px-margin-desktop py-8 border-t border-outline-variant/20 flex flex-col md:flex-row justify-between items-center gap-4 max-w-container-max mx-auto">
-<p class="font-body-md text-body-md text-on-surface-variant">© 2024 Adhveer Enterprises. Crafted with artisanal excellence.</p>
-<div class="flex items-center gap-2">
-<span class="font-label-sm text-label-sm uppercase text-soft-clay">Premium Partner</span>
-<div class="w-8 h-[2px] bg-primary"></div>
+</div>
+<div class="mt-12 md:mt-16 pt-8 border-t border-soft-clay text-center">
+<p class="font-body-md text-warm-cream/40 text-xs md:text-sm">© 2024 Adhveer Enterprises. All rights reserved.</p>
 </div>
 </div>
 </footer>
-<!-- Mobile Menu -->
-<div class="fixed inset-0 z-[60] bg-surface-main hidden overflow-y-auto" id="mobile-menu">
-<div class="p-margin-mobile flex flex-col min-h-full">
-<div class="flex justify-between items-center mb-12">
-<div class="font-headline-md text-headline-md font-bold text-soft-clay">Adhveer</div>
-<button class="material-symbols-outlined text-3xl" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">close</button>
-</div>
-<div class="flex flex-col gap-8 items-center text-center">
-<a class="font-display-lg text-4xl text-soft-clay" href="#" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Home</a>
-<a class="font-display-lg text-4xl text-soft-clay" href="#" onclick="document.getElementById('mobile-menu').classList.add('hidden')">About</a>
-<a class="font-display-lg text-4xl text-primary font-bold" href="#" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Brands</a>
-<a class="font-display-lg text-4xl text-soft-clay" href="#" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Services</a>
-<a class="font-display-lg text-4xl text-soft-clay" href="#" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Contact</a>
-</div>
-<div class="mt-auto pt-12 pb-8 text-center border-t border-outline-variant/30">
-<p class="font-label-sm text-label-sm text-on-surface-variant">info@adhveer.in</p>
-</div>
-</div>
-</div>
+
+
+
+
+
+
+
+
 <script>
-        function filterProducts(category, btnElement) {
+    // Navigation toggle
+    const menuToggle = document.getElementById('menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+    
+    menuToggle.addEventListener('click', () => {
+        mobileMenu.classList.toggle('active');
+        const icon = menuToggle.querySelector('.material-symbols-outlined');
+        icon.textContent = mobileMenu.classList.contains('active') ? 'close' : 'menu';
+    });
+
+    // Close menu on link click
+    document.querySelectorAll('#mobile-menu a').forEach(link => {
+        link.addEventListener('click', () => {
+            mobileMenu.classList.remove('active');
+            menuToggle.querySelector('.material-symbols-outlined').textContent = 'menu';
+        });
+    });
+
+    // Scroll reveal animation
+    const observerOptions = { threshold: 0.1 };
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('opacity-100', 'translate-y-0');
+                entry.target.classList.remove('opacity-0', 'translate-y-10');
+            }
+        });
+    }, observerOptions);
+
+    document.querySelectorAll('section').forEach(section => {
+        section.classList.add('transition-all', 'duration-1000', 'opacity-0', 'translate-y-10');
+        observer.observe(section);
+    });
+
+    // Navbar scroll effect
+    window.addEventListener('scroll', () => {
+        const nav = document.querySelector('nav');
+        if (window.scrollY > 50) {
+            nav.classList.add('bg-warm-cream', 'shadow-md', 'py-1');
+            nav.classList.remove('py-3', 'md:py-4');
+        } else {
+            nav.classList.remove('bg-warm-cream', 'shadow-md', 'py-1');
+            nav.classList.add('py-3', 'md:py-4');
+        }
+    });
+     function filterProducts(category, btnElement) {
             const products = document.querySelectorAll('.product-card');
             const buttons = document.querySelectorAll('.filter-btn');
 
@@ -398,5 +489,5 @@
                 }
             });
         });
-    </script>
+</script>
 </body></html>
